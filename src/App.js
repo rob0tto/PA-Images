@@ -16,7 +16,7 @@ function App() {
     axios.get(`https://b0t.mypinata.cloud/ipfs/QmdRAvWJa2Ck3pQPVni1DhYHc1zZNvJnZWAacS3vfWuDYA/${paNum}`)
       .then((e) => {
         const ipfsHash = e.data.image.replace('ipfs://', '');
-        window.open(`https://b0t.mypinata.cloud/ipfs/${ipfsHash}`, "_self")
+        window.open(`https://b0t.mypinata.cloud/ipfs/${ipfsHash}`, "_blank")
       })
   }, [paNum]);
 
